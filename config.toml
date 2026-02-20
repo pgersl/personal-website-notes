@@ -1,6 +1,6 @@
 baseURL = 'https://notes.pgersl.xyz/'
 languageCode = 'cs-CZ'
-title = 'Petr Geršl - Notes'
+title = 'Notes | Petr Geršl'
 uglyURLs = 'false'
 enableEmoji = 'true'
 [markup]
@@ -11,7 +11,7 @@ enableEmoji = 'true'
         ordered = false
         startLevel = 1
 [params]
-    description = "The official website of Petr Geršl dedicated to his notes and research"
+    description = "Oficiální web Petra Geršla s jeho poznámkami."
 [outputs]
     home = ['HTML', 'JSON', 'RSS']
     page = ['HTML']

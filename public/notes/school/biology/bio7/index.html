@@ -32,62 +32,31 @@
         </script>
         <script type="text/javascript" src="/js/site-map.js" defer></script>
         <script type="text/javascript" src="/js/search.js" defer></script>
-        <script type="text/javascript" src="/js/go-up-button.js" defer></script>
         <script src="/js/toc.js" defer></script>
 
     </head>
     <body>
-        <header>Petr Geršl</header>
         <nav>
             <div class="nav-content">
-                <div id="nav-links-search">
-                    <div class="nav-links">
-                        <div class="main-nav-links">
-                            <a href="/" class="nav-link">Domů</a>
-                        </div>
-                        <div class="sites-nav-links">
-                            
-                                <a href="https://pgersl.xyz" class="nav-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://wiki.pgersl.xyz" class="nav-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://music.pgersl.xyz" class="nav-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div id="nav-search">
-                        <div id="nav-search-bar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input id="search-input" type="text" placeholder="Hledat...">
-                            <div id="search-results-container">
-                                <div id="search-results"></div>
-                                <div id="not-found-message">
-                                    Jejda...<br>
-                                    Nic nenalezeno!<br>
-                                    Zkuste vyhledat něco jiného.
-                                </div>
-                                <template id="search-result-template">
-                                    <div class="search-result">
-                                        <a class="search-result-title" href=""></a>
-                                    </div>
-                                </template>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-utils">
-                    <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <div class="nav-links">
                     
-    <button class="nav-util" id="toc-toggle"><i class="fa-solid fa-list"></i></button>
-
+                        <a href="/" class="nav-link">Domů</a>
+                    
+                    <a href="/about" class="nav-link">O stránce</a>
                 </div>
+                
+                    <button class="nav-util" id="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+                
             </div>
         </nav>
-        <button id="go-up-button" onclick="window.scrollTo({top: 0})"><i class="fa-solid fa-arrow-up"></i></button>
+        
+    <button id="toc-toggle"><i class="fa-solid fa-list"></i></button>
+
         <div class="flex-container">
             <aside id="site-map">
-                <div class="aside-title">Poznámky</div>
                 <div class="site-map-content">
+                    <div class="aside-title">Poznámky</div>
                     
                     
                         <section class="site-map-section">
@@ -1580,6 +1549,15 @@
                     
                         <section class="site-map-section">
     
+    <button class="section-button">	&bull; O stránce</button>
+    <div class="section-content">
+        
+        
+    </div>
+</section>
+                    
+                        <section class="site-map-section">
+    
     <button class="section-button">	&bull; Český jazyk</button>
     <div class="section-content">
         
@@ -2404,155 +2382,9 @@
 </section>
                     
                 </div>
+                <div id="site-map-blur"></div>
             </aside>
-            <div id="main-toc">
-                
-    <aside id="toc">
-        <div class="aside-title">Obsah</div>
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#obecná-charakteristika">Obecná charakteristika</a></li>
-    <li><a href="#systém-členovců">Systém členovců</a></li>
-    <li><a href="#klepítkatci-chelicerata">Klepítkatci (<em>Chelicerata</em>)</a>
-      <ul>
-        <li><a href="#hrotnatci-merostomata">Hrotnatci (<em>Merostomata</em>)</a></li>
-        <li><a href="#pavoukovci-arachnida">Pavoukovci (<em>Arachnida</em>)</a>
-          <ul>
-            <li><a href="#pavouk-křižák-araneus-diadematus">Pavouk křižák (<em>Araneus diadematus</em>)</a>
-              <ul>
-                <li><a href="#základní-stavba">Základní stavba</a></li>
-                <li><a href="#trávicí-soustava">Trávicí soustava</a></li>
-                <li><a href="#tvorba-pavučiny">Tvorba pavučiny</a></li>
-                <li><a href="#dýchací-soustava">Dýchací soustava</a></li>
-                <li><a href="#rozmnožování">Rozmnožování</a></li>
-                <li><a href="#cévní-soustava">Cévní soustava</a></li>
-                <li><a href="#nervová-soustava">Nervová soustava</a></li>
-              </ul>
-            </li>
-            <li><a href="#pavouci-araneida">Pavouci (<em>Araneida</em>)</a>
-              <ul>
-                <li><a href="#zástupci">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#štíři-scorpionada">Štíři (<em>Scorpionada</em>)</a>
-              <ul>
-                <li><a href="#zástupci-1">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#štírci-pseudoscorpionada">Štírci (<em>Pseudoscorpionada</em>)</a>
-              <ul>
-                <li><a href="#zástupci-2">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#solifugy-solpugida">Solifugy (<em>Solpugida</em>)</a>
-              <ul>
-                <li><a href="#zástupci-3">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#sekáči-opilionida">Sekáči (<em>Opilionida</em>)</a>
-              <ul>
-                <li><a href="#zástupci-4">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#roztoči-acarina">Roztoči (<em>Acarina</em>)</a>
-              <ul>
-                <li><a href="#zástupci-5">Zástupci</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#žabernatí-branchiata">Žabernatí (<em>Branchiata</em>)</a>
-      <ul>
-        <li><a href="#vyšší-korýši">Vyšší korýši</a>
-          <ul>
-            <li><a href="#rak-říční-astacus-astacus">Rak říční (<em>Astacus astacus</em>)</a>
-              <ul>
-                <li><a href="#krunýř-karapax">Krunýř (<em>karapax</em>)</a></li>
-                <li><a href="#trávicí-soustava-1">Trávicí soustava</a></li>
-                <li><a href="#dýchycí-soustava">Dýchycí soustava</a></li>
-                <li><a href="#cévní-soustava-1">Cévní soustava</a></li>
-                <li><a href="#nervová-soustava-1">Nervová soustava</a></li>
-                <li><a href="#rozmnožování-1">Rozmnožování</a></li>
-              </ul>
-            </li>
-            <li><a href="#zástupci-6">Zástupci</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#vzdušnicovci-tracheata">Vzdušnicovci (<em>Tracheata</em>)</a>
-      <ul>
-        <li><a href="#stonožkovci-myriapoda">Stonožkovci (<em>Myriapoda</em>)</a>
-          <ul>
-            <li><a href="#mnohonožky-diplopoda">Mnohonožky (<em>Diplopoda</em>)</a>
-              <ul>
-                <li><a href="#zástupci-7">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#stonožky-chilopoda">Stonožky (<em>Chilopoda</em>)</a>
-              <ul>
-                <li><a href="#zástupci-8">Zástupci</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#hmyz-insecta">Hmyz (<em>Insecta</em>)</a>
-          <ul>
-            <li><a href="#vnější-stavba">Vnější stavba</a>
-              <ul>
-                <li><a href="#hlava-caput">Hlava (<em>Caput</em>)</a></li>
-                <li><a href="#hruď-thorax">Hruď (<em>Thorax</em>)</a></li>
-                <li><a href="#zadeček-abdomen">Zadeček (<em>Abdomen</em>)</a></li>
-                <li><a href="#pokožka-hypodermis">Pokožka (<em>Hypodermis</em>)</a></li>
-              </ul>
-            </li>
-            <li><a href="#vnitřní-stavba">Vnitřní stavba</a>
-              <ul>
-                <li><a href="#trávicí-soustava-2">Trávicí soustava</a></li>
-                <li><a href="#dýchací-soustava-1">Dýchací soustava</a></li>
-                <li><a href="#cévní-soustava-2">Cévní soustava</a></li>
-                <li><a href="#nervová-soustava-2">Nervová soustava</a></li>
-                <li><a href="#rozmnožování-2">Rozmnožování</a></li>
-                <li><a href="#vývoj">Vývoj</a>
-                  <ul>
-                    <li><a href="#proměna-nedokonalá-hemimetabolie">Proměna nedokonalá (<em>Hemimetabolie</em>)</a></li>
-                    <li><a href="#proměna-dokonalá-holometabolie">Proměna dokonalá (<em>Holometabolie</em>)</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#systém-hmyzu">Systém hmyzu</a></li>
-            <li><a href="#vážky-odonata">Vážky (<em>Odonata</em>)</a>
-              <ul>
-                <li><a href="#zástupci-9">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#škvoři-dermoptera">Škvoři (<em>Dermoptera</em>)</a>
-              <ul>
-                <li><a href="#zástupci-10">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#síťokřídlí-neuroptera">Síťokřídlí (<em>Neuroptera</em>)</a>
-              <ul>
-                <li><a href="#zástupci-11">Zástupci</a></li>
-              </ul>
-            </li>
-            <li><a href="#dvoukřídlí-diptera">Dvoukřídlí (<em>Diptera</em>)</a>
-              <ul>
-                <li><a href="#zástupci-12">Zástupci</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </aside>
-
-                
+            
     <main>
         <div class="main-title">Členovci</div>
         <div class="main-content"><h1 id="obecná-charakteristika">Obecná charakteristika</h1>
@@ -3809,32 +3641,184 @@
 </ul>
 </div>
     </main>
-
+    <div class="search">
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search-input" type="text" placeholder="Hledat...">
+    </div>
+    <div id="search-results-container">
+        <div id="search-results"></div>
+        <div id="not-found-message">
+            ¯\_(ツ)_/¯
+        </div>
+        <template id="search-result-template">
+            <div class="search-result">
+                <a class="search-result-title" href=""></a>
             </div>
+        </template>
+    </div>
+</div>
+
+            
+    <aside id="toc">
+        <div class="aside-title">Obsah</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#obecná-charakteristika">Obecná charakteristika</a></li>
+    <li><a href="#systém-členovců">Systém členovců</a></li>
+    <li><a href="#klepítkatci-chelicerata">Klepítkatci (<em>Chelicerata</em>)</a>
+      <ul>
+        <li><a href="#hrotnatci-merostomata">Hrotnatci (<em>Merostomata</em>)</a></li>
+        <li><a href="#pavoukovci-arachnida">Pavoukovci (<em>Arachnida</em>)</a>
+          <ul>
+            <li><a href="#pavouk-křižák-araneus-diadematus">Pavouk křižák (<em>Araneus diadematus</em>)</a>
+              <ul>
+                <li><a href="#základní-stavba">Základní stavba</a></li>
+                <li><a href="#trávicí-soustava">Trávicí soustava</a></li>
+                <li><a href="#tvorba-pavučiny">Tvorba pavučiny</a></li>
+                <li><a href="#dýchací-soustava">Dýchací soustava</a></li>
+                <li><a href="#rozmnožování">Rozmnožování</a></li>
+                <li><a href="#cévní-soustava">Cévní soustava</a></li>
+                <li><a href="#nervová-soustava">Nervová soustava</a></li>
+              </ul>
+            </li>
+            <li><a href="#pavouci-araneida">Pavouci (<em>Araneida</em>)</a>
+              <ul>
+                <li><a href="#zástupci">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#štíři-scorpionada">Štíři (<em>Scorpionada</em>)</a>
+              <ul>
+                <li><a href="#zástupci-1">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#štírci-pseudoscorpionada">Štírci (<em>Pseudoscorpionada</em>)</a>
+              <ul>
+                <li><a href="#zástupci-2">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#solifugy-solpugida">Solifugy (<em>Solpugida</em>)</a>
+              <ul>
+                <li><a href="#zástupci-3">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#sekáči-opilionida">Sekáči (<em>Opilionida</em>)</a>
+              <ul>
+                <li><a href="#zástupci-4">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#roztoči-acarina">Roztoči (<em>Acarina</em>)</a>
+              <ul>
+                <li><a href="#zástupci-5">Zástupci</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#žabernatí-branchiata">Žabernatí (<em>Branchiata</em>)</a>
+      <ul>
+        <li><a href="#vyšší-korýši">Vyšší korýši</a>
+          <ul>
+            <li><a href="#rak-říční-astacus-astacus">Rak říční (<em>Astacus astacus</em>)</a>
+              <ul>
+                <li><a href="#krunýř-karapax">Krunýř (<em>karapax</em>)</a></li>
+                <li><a href="#trávicí-soustava-1">Trávicí soustava</a></li>
+                <li><a href="#dýchycí-soustava">Dýchycí soustava</a></li>
+                <li><a href="#cévní-soustava-1">Cévní soustava</a></li>
+                <li><a href="#nervová-soustava-1">Nervová soustava</a></li>
+                <li><a href="#rozmnožování-1">Rozmnožování</a></li>
+              </ul>
+            </li>
+            <li><a href="#zástupci-6">Zástupci</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#vzdušnicovci-tracheata">Vzdušnicovci (<em>Tracheata</em>)</a>
+      <ul>
+        <li><a href="#stonožkovci-myriapoda">Stonožkovci (<em>Myriapoda</em>)</a>
+          <ul>
+            <li><a href="#mnohonožky-diplopoda">Mnohonožky (<em>Diplopoda</em>)</a>
+              <ul>
+                <li><a href="#zástupci-7">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#stonožky-chilopoda">Stonožky (<em>Chilopoda</em>)</a>
+              <ul>
+                <li><a href="#zástupci-8">Zástupci</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#hmyz-insecta">Hmyz (<em>Insecta</em>)</a>
+          <ul>
+            <li><a href="#vnější-stavba">Vnější stavba</a>
+              <ul>
+                <li><a href="#hlava-caput">Hlava (<em>Caput</em>)</a></li>
+                <li><a href="#hruď-thorax">Hruď (<em>Thorax</em>)</a></li>
+                <li><a href="#zadeček-abdomen">Zadeček (<em>Abdomen</em>)</a></li>
+                <li><a href="#pokožka-hypodermis">Pokožka (<em>Hypodermis</em>)</a></li>
+              </ul>
+            </li>
+            <li><a href="#vnitřní-stavba">Vnitřní stavba</a>
+              <ul>
+                <li><a href="#trávicí-soustava-2">Trávicí soustava</a></li>
+                <li><a href="#dýchací-soustava-1">Dýchací soustava</a></li>
+                <li><a href="#cévní-soustava-2">Cévní soustava</a></li>
+                <li><a href="#nervová-soustava-2">Nervová soustava</a></li>
+                <li><a href="#rozmnožování-2">Rozmnožování</a></li>
+                <li><a href="#vývoj">Vývoj</a>
+                  <ul>
+                    <li><a href="#proměna-nedokonalá-hemimetabolie">Proměna nedokonalá (<em>Hemimetabolie</em>)</a></li>
+                    <li><a href="#proměna-dokonalá-holometabolie">Proměna dokonalá (<em>Holometabolie</em>)</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#systém-hmyzu">Systém hmyzu</a></li>
+            <li><a href="#vážky-odonata">Vážky (<em>Odonata</em>)</a>
+              <ul>
+                <li><a href="#zástupci-9">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#škvoři-dermoptera">Škvoři (<em>Dermoptera</em>)</a>
+              <ul>
+                <li><a href="#zástupci-10">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#síťokřídlí-neuroptera">Síťokřídlí (<em>Neuroptera</em>)</a>
+              <ul>
+                <li><a href="#zástupci-11">Zástupci</a></li>
+              </ul>
+            </li>
+            <li><a href="#dvoukřídlí-diptera">Dvoukřídlí (<em>Diptera</em>)</a>
+              <ul>
+                <li><a href="#zástupci-12">Zástupci</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </aside>
+
         </div>
         <footer>
             <div class="footer-content">
                 <div class="footer-container">
-                    <strong>Petr Geršl</strong>
-                    <div class="footer-item"><a class="footer-link" href="mailto:pgersl05@gmail.com">pgersl05@gmail.com</a></div>
-                    <div class="footer-item"><a class="footer-link" href="tel:+420731347915">+420 731 347 915</a></div>
-                    <div class="footer-item">Brno, CZE</div>
+                    <strong>Notes | Petr Geršl</strong>
+                    <p>2026</p>
                 </div>
                 <div class="footer-container">
-                    <strong>Prozkoumejte více:</strong>
-                    
-                        <a href="https://pgersl.xyz" class="footer-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://wiki.pgersl.xyz" class="footer-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://music.pgersl.xyz" class="footer-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
+                    <a id="buy-me-a-coffee" href="https://buymeacoffee.com/petrgersl" id="buy-me-a-coffee"><i class="fa-solid fa-mug-hot"></i></a>
+                    <a id="linktree" href="https://linktr.ee/pgersl?utm_source=linktree_profile_share&ltsid=df6a1618-6fb2-4c28-929b-27bc68534dc5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 237.4L253.8 237.4L164.4 152L213.9 101L299.1 188.8L299.1 64L373 64L373 188.8L458.2 101.2L507.6 152L418.2 237.2L543.9 237.2L543.9 307.7L417.5 307.7L507.5 395.3L458.2 445.1L336 322.1L213.8 445.1L164.3 395.5L254.3 307.9L127.9 307.9L127.9 237.4zM298.9 408.8L372.8 408.8L372.8 576L298.9 576L298.9 408.8z"/></svg></a>
                 </div>
-                <div class="footer-container">
-                    <strong>Najděte mě:</strong>
-                    <div class="footer-item"><a class="footer-link" href="linkedin.com/in/petr-geršl-9324491a6" target="_blank">LinkedIn</a></div>
-                    <div class="footer-item"><a class="footer-link" href="https://github.com/pgersl" target="_blank">GitHub</a></div>
-                </div>
+            </div>
+            <div class="subfooter">
+                <span>Designed by <a href="https://pgersl.xyz/">Petr Geršl</a></span>
             </div>
         </footer>
     </body>

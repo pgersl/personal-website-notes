@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 :root {
     --transition: all 100ms;
     --spacer: 2em 0;
-
-    --font: 'REM', sans-serif;
+    --width: min(95%, 1100px);
+    --font: 'Lexend Deca', sans-serif;
     --font-size: 14px;
     --h1-size: 28px;
     --h2-size: 24px;
@@ -14,18 +14,9 @@
     --tiny-size: 10px;
 
     /*colors*/
-    --light1: #F9FAFA;
-    --light2: #e7ebeb;
-    --light3: #cfd3d3;
-    --light4: #a1a4a4;
-    --dark1: #0f1111;
-    --accent1: #355133;
-    --accent2: #4d7c4a;
-    --accent3: #5e965a;
-    --accent4: #253724;
-    --accent5: #94c792;
-
-    --gradient1: linear-gradient(120deg, var(--dark1) 0%, var(--accent4) 100%);
-    --gradient2: linear-gradient(90deg, var(--dark1) 0%, var(--accent4) 27%, var(--accent2) 100%);
-    --gradient3: linear-gradient(120deg, var(--dark1) 0%, var(--accent4) 40%, var(--accent1) 100%);
+    --text: #000000;
+    --background: #ffffff;
+    --primary: #9027ce;
+    --secondary: #f4f1f9;
+    --accent: #8f3bff;
 }

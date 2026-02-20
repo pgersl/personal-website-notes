@@ -1,9 +1,6 @@
 {{define "title"}}<title>{{.Title}}</title>{{end}}
 {{define "styles"}}<link rel="stylesheet" href="/css/tableu.css">{{end}}
 {{define "scripts"}}<script src="/js/tableau.js" defer></script>{{end}}
-{{define "nav-utils"}}
-    <button class="nav-util" id="toc-toggle"><i class="fa-solid fa-list"></i></button>
-{{end}}
 
 {{define "main"}}
     <main>
@@ -1172,4 +1169,5 @@
         <div class="element-symbol"></div>
         <div class="element-bottom"></div>
     </a>
+    {{partial "search.html" .}}
 {{end}}

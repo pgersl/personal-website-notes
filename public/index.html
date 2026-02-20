@@ -33,60 +33,25 @@
         </script>
         <script type="text/javascript" src="/js/site-map.js" defer></script>
         <script type="text/javascript" src="/js/search.js" defer></script>
-        <script type="text/javascript" src="/js/go-up-button.js" defer></script>
         
 
     </head>
     <body>
-        <header>Petr Geršl</header>
         <nav>
             <div class="nav-content">
-                <div id="nav-links-search">
-                    <div class="nav-links">
-                        <div class="main-nav-links">
-                            <a href="/" class="nav-link">Domů</a>
-                        </div>
-                        <div class="sites-nav-links">
-                            
-                                <a href="https://pgersl.xyz" class="nav-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://wiki.pgersl.xyz" class="nav-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://music.pgersl.xyz" class="nav-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div id="nav-search">
-                        <div id="nav-search-bar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input id="search-input" type="text" placeholder="Hledat...">
-                            <div id="search-results-container">
-                                <div id="search-results"></div>
-                                <div id="not-found-message">
-                                    Jejda...<br>
-                                    Nic nenalezeno!<br>
-                                    Zkuste vyhledat něco jiného.
-                                </div>
-                                <template id="search-result-template">
-                                    <div class="search-result">
-                                        <a class="search-result-title" href=""></a>
-                                    </div>
-                                </template>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-utils">
-                    <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <div class="nav-links">
                     
+                    <a href="/about" class="nav-link">O stránce</a>
                 </div>
+                
             </div>
         </nav>
-        <button id="go-up-button" onclick="window.scrollTo({top: 0})"><i class="fa-solid fa-arrow-up"></i></button>
+        
         <div class="flex-container">
             <aside id="site-map">
-                <div class="aside-title">Poznámky</div>
                 <div class="site-map-content">
+                    <div class="aside-title">Poznámky</div>
                     
                     
                         <section class="site-map-section">
@@ -1579,6 +1544,15 @@
                     
                         <section class="site-map-section">
     
+    <button class="section-button">	&bull; O stránce</button>
+    <div class="section-content">
+        
+        
+    </div>
+</section>
+                    
+                        <section class="site-map-section">
+    
     <button class="section-button">	&bull; Český jazyk</button>
     <div class="section-content">
         
@@ -2403,52 +2377,46 @@
 </section>
                     
                 </div>
+                <div id="site-map-blur"></div>
             </aside>
-            <div id="main-toc">
-                
-                
+            
     <main>
-        <div class="main-title">Vítejte!</div>
-        <div class="main-content"><h2 id="o-mně">O mně</h2>
-<p>Jsem Petr Geršl, student víceletého gymnázia, a toto jsou stránky s mými poznámkami. Dříve jsem si dělal poznámky na papír, ale v současnosti se snažím být co nejvíce paper-less. S digitálními poznámkami jsem začal už před nějakou dobou s nástroji, které jsem postupně opouštěl, protože mi nevyhovovali. Používal jsem <a href="https://www.notion.so/">Notion</a>, ale to se špatně sdílí a zároveň mi obecně nevyhovoval komplexní systém, který Notion nabízí a potřeboval jsem něco jenoduššího. Později jsem přešel na <a href="https://www.obsidian.md/">Obsidian</a>, jenže ten nemá dobře funkční zdarma rozhraní na jiných platformách než na počítači. Ještě než byl <a href="https://www.roamresearch.com/">Roam Research</a> placený jsem si založil účet a ten držím zdarma doteď. Z Obsidianu jsme migroval sem. Roam jsem používal docela dlouho, ale později pro mě bylo sdílení s ostatními taky nepohodlné. Nakonec jsem se rozhodl napsat vlastní stránky, ke kterým budou mít přístup všichni a sdílení je jen otázkou zkopírování odkazu.</p>
-<figure>
-    <a class="img-link" href="/media/img/main/me.jpg" target="_blank">
-        <img src="/media/img/main/me.jpg" alt="Petr Geršl">
-    </a>
-    <figcaption>
-        Petr Geršl
-    </figcaption>
-</figure>
-<h2 id="proč-tyto-stránky-existují">Proč tyto stránky existují</h2>
-<p>V rámci většího projektu, na kterém jsem pracoval přes léto 2023 jsem moje stránky rozdělil na několik subdomén a zároveň zásadně upravil jejich vzezření. Jsem fanoušek konceptu <a href="https://www.swyx.io/learn-in-public">learning in public</a> a zároveň můžu snadněji moje poznámky sdílet (primárně s mými spolužáky). Většina poznámek, které zde najdete, jsou poznámky školní, které ale i tak mohou sloužit jako velmi elementární zdroj informací. Některé poznámky jsou komplexnější, ty ale stále doplňuji.</p>
+        <img src="/media/img/main/me.png">
+        <h1>Vítejte!</h1>
+        <div class="search">
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search-input" type="text" placeholder="Hledat...">
+    </div>
+    <div id="search-results-container">
+        <div id="search-results"></div>
+        <div id="not-found-message">
+            ¯\_(ツ)_/¯
+        </div>
+        <template id="search-result-template">
+            <div class="search-result">
+                <a class="search-result-title" href=""></a>
+            </div>
+        </template>
+    </div>
 </div>
     </main>
 
-            </div>
+            
         </div>
         <footer>
             <div class="footer-content">
                 <div class="footer-container">
-                    <strong>Petr Geršl</strong>
-                    <div class="footer-item"><a class="footer-link" href="mailto:pgersl05@gmail.com">pgersl05@gmail.com</a></div>
-                    <div class="footer-item"><a class="footer-link" href="tel:+420731347915">+420 731 347 915</a></div>
-                    <div class="footer-item">Brno, CZE</div>
+                    <strong>Notes | Petr Geršl</strong>
+                    <p>2026</p>
                 </div>
                 <div class="footer-container">
-                    <strong>Prozkoumejte více:</strong>
-                    
-                        <a href="https://pgersl.xyz" class="footer-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://wiki.pgersl.xyz" class="footer-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://music.pgersl.xyz" class="footer-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
+                    <a id="buy-me-a-coffee" href="https://buymeacoffee.com/petrgersl" id="buy-me-a-coffee"><i class="fa-solid fa-mug-hot"></i></a>
+                    <a id="linktree" href="https://linktr.ee/pgersl?utm_source=linktree_profile_share&ltsid=df6a1618-6fb2-4c28-929b-27bc68534dc5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 237.4L253.8 237.4L164.4 152L213.9 101L299.1 188.8L299.1 64L373 64L373 188.8L458.2 101.2L507.6 152L418.2 237.2L543.9 237.2L543.9 307.7L417.5 307.7L507.5 395.3L458.2 445.1L336 322.1L213.8 445.1L164.3 395.5L254.3 307.9L127.9 307.9L127.9 237.4zM298.9 408.8L372.8 408.8L372.8 576L298.9 576L298.9 408.8z"/></svg></a>
                 </div>
-                <div class="footer-container">
-                    <strong>Najděte mě:</strong>
-                    <div class="footer-item"><a class="footer-link" href="linkedin.com/in/petr-geršl-9324491a6" target="_blank">LinkedIn</a></div>
-                    <div class="footer-item"><a class="footer-link" href="https://github.com/pgersl" target="_blank">GitHub</a></div>
-                </div>
+            </div>
+            <div class="subfooter">
+                <span>Designed by <a href="https://pgersl.xyz/">Petr Geršl</a></span>
             </div>
         </footer>
     </body>

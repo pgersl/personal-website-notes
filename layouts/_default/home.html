@@ -2,7 +2,8 @@
 {{define "styles"}}<link rel="stylesheet" href="/css/home.css">{{end}}
 {{define "main"}}
     <main>
-        <div class="main-title">{{.Title}}</div>
-        <div class="main-content">{{.Content}}</div>
+        <img src="/media/img/main/me.png">
+        <h1>Vítejte!</h1>
+        {{partial "search.html" .}}
     </main>
 {{end}}

@@ -1,15 +1,10 @@
-#main-toc {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 #toc {
-    width: 30%;
-    background-color: var(--light1);
+    min-width: 300px;
+    background-color: var(--background);
     padding-left: 2em;
     height: fit-content;
     position: sticky;
-    top: 2em;
+    top: 7rem;
     display: block;
     overflow: auto;
     max-height: 95vh;
@@ -18,7 +13,7 @@
 
 #toc nav {
     padding: 0;
-    background-color: var(--light1);
+    background-color: var(--background);
     background-image: none;
 }
 
@@ -49,17 +44,42 @@
 #toc ul {
     width: 100%;
 }
+#toc-toggle {
+    display: none;
+    position: fixed;
+    top: 7.5rem;
+    right: 1rem;
+    width: 27px;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: .3em;
+    background-color: transparent;
+    color: var(--text);
+    transition: var(--transition);
+    background-color: var(--background);
+    box-shadow: 0 0 5px 5px #00000006;
+    z-index: 3;
+}
+#toc-toggle i {
+    font-size: var(--h4-size);
+}
+#toc-toggle:hover {
+    background-color: var(--primary);
+    color: var(--background);
+    cursor: pointer;
+}
 
 main {
-    width: 70%;
-    padding-right: 2em;
+    max-width: 70ch;
 }
 
 blockquote {
     padding: .4em;
-    border-left: solid 4px var(--accent3);
+    border-left: solid 4px var(--primary);
     margin: 1em 0;
-    background-color: var(--light2);
+    background-color: var(--secondary);
     width: fit-content;
     border-radius: .3em;
 }
@@ -88,18 +108,18 @@ blockquote p {
 }
 
 thead, tbody {
-    background-color: var(--light2);
-    border: 2px solid var(--dark1);
+    background-color: var(--secondary);
+    border: 2px solid var(--text);
 }
 
 .note-table th, .note-table td {
-    border: 1px solid var(--dark1);
+    border: 1px solid var(--text);
     padding: .3rem .6rem;
     align-items: center;
 }
 
 .note-table th {
-    color: var(--accent3);
+    color: var(--primary);
 }
 
 .note-table caption {
@@ -120,31 +140,19 @@ thead, tbody {
     max-width: 160px;
 }
 
-@media (max-width:1080px) {
-    #main-toc {
-        width: 100%;
-        margin-left: 0;
-    }
-    #toc {
-        width: 40%;
-    }
-    main {
-        width: 60%;
-    }
-}
-
-@media (max-width:640px) {
+@media (max-width:680px) {
     #toc {
         display: none;
-        background-color: var(--light1);
-        position: absolute;
-        z-index: 800;
-        top: calc(25vh + 13em);
+        background-color: var(--background);
+        position: fixed;
+        z-index: 1;
+        top: 6rem;
         left: 0;
         padding: 2em 1em;
-        width: 100%;
-        border-bottom: solid 4px var(--accent3);
-        max-height: 40vh;
+        width: 100vw;
+        border-bottom: solid 4px var(--primary);
+        max-height: 50vh;
+        box-shadow: 0 5px 5px 0 #00000016;
     }
     #toc.toggled-by-util {
         display: block;

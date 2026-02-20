@@ -746,6 +746,8 @@
   </url><url>
     <loc>http://localhost:1313/notes/research/chemistry/ap-chemistry/</loc>
   </url><url>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
     <loc>http://localhost:1313/notes/research/chemistry/ap-chemistry/acids-and-bases/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/research/chemistry/inorganic-chemistry/periodic-table/actinium-and-actinoids/</loc>
@@ -830,6 +832,8 @@
   </url><url>
     <loc>http://localhost:1313/notes/</loc>
   </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
     <loc>http://localhost:1313/notes/research/chemistry/general-chemistry/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/research/chemistry/inorganic-chemistry/periodic-table/other-chalcogenes/</loc>
@@ -875,8 +879,6 @@
     <loc>http://localhost:1313/notes/research/chemistry/inorganic-chemistry/periodic-table/uranium/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/research/chemistry/inorganic-chemistry/periodic-table/vanadium/</loc>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/research/chemistry/inorganic-chemistry/periodic-table/hydrogen/</loc>
   </url><url>

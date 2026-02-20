@@ -1,8 +1,21 @@
+const searchContainer = document.querySelector('.search');
 const resultTemplate = document.getElementById('search-result-template');
 const resultsContainer = document.getElementById('search-results');
 const searchBar = document.getElementById('search-input');
 const notFoundMessage = document.getElementById('not-found-message');
 const searchResultsContainer = document.getElementById('search-results-container');
+const searchToggle = document.getElementById('search-toggle');
+
+if (searchToggle) { 
+  searchToggle.addEventListener('click', () => {
+    searchContainer.style.display = 'flex';
+  });
+  searchContainer.addEventListener('click', (e) => {
+  if (e.target === searchContainer) {
+      searchContainer.style.display = 'none';
+  }
+});
+}
 
 let currentResultIndex = -1;
 
@@ -34,6 +47,9 @@ document.body.addEventListener('keydown', (e) => {
           const resultLink = selectedResult.querySelector('.search-result-title');
           window.location.href = resultLink.href;
       }
+  }
+  if (searchContainer.style.display === 'flex' && e.key === 'Escape') {
+      searchContainer.style.display = 'none';
   }
 });
 

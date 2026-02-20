@@ -1,13 +1,20 @@
 const siteMapUtil = document.getElementById('site-map-toggle')
 const siteMapContainer = document.getElementById('site-map');
-
-// Toggling the site map on smaller view width
+const siteMapBlur = document.getElementById('site-map-blur');
 
 siteMapUtil.addEventListener('click', () => {
-    siteMapContainer.classList.toggle('toggled-by-util')
+    siteMapContainer.style.display = 'flex';
+    setTimeout(() => {
+        siteMapContainer.style.opacity = '1';
+    }, 200);
+})
+siteMapBlur.addEventListener('click', () => {
+    siteMapContainer.style.opacity = '0';
+    setTimeout(() => {
+        siteMapContainer.style.display = 'none';
+    }, 200);
 })
 
-// Untoggle all child sections when a parent is un toggled
 
 function untoggleChildSections(section) {
     section.classList.remove('toggled');
@@ -23,7 +30,6 @@ sectionBtns.forEach((sectionBtn) => {
     const section = sectionBtn.parentElement;
     sectionBtn.addEventListener('click', () => {
         section.classList.toggle('toggled');
-        // Check if the section does not have toggled as a class, if not, untoggle all child sections
         if (!section.classList.contains('toggled')) {
             const childSections = section.querySelectorAll('.site-map-section');
             childSections.forEach((childSection) => {

@@ -32,62 +32,31 @@
         </script>
         <script type="text/javascript" src="/js/site-map.js" defer></script>
         <script type="text/javascript" src="/js/search.js" defer></script>
-        <script type="text/javascript" src="/js/go-up-button.js" defer></script>
         <script src="/js/toc.js" defer></script>
 
     </head>
     <body>
-        <header>Petr Geršl</header>
         <nav>
             <div class="nav-content">
-                <div id="nav-links-search">
-                    <div class="nav-links">
-                        <div class="main-nav-links">
-                            <a href="/" class="nav-link">Domů</a>
-                        </div>
-                        <div class="sites-nav-links">
-                            
-                                <a href="https://pgersl.xyz" class="nav-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://wiki.pgersl.xyz" class="nav-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://music.pgersl.xyz" class="nav-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div id="nav-search">
-                        <div id="nav-search-bar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input id="search-input" type="text" placeholder="Hledat...">
-                            <div id="search-results-container">
-                                <div id="search-results"></div>
-                                <div id="not-found-message">
-                                    Jejda...<br>
-                                    Nic nenalezeno!<br>
-                                    Zkuste vyhledat něco jiného.
-                                </div>
-                                <template id="search-result-template">
-                                    <div class="search-result">
-                                        <a class="search-result-title" href=""></a>
-                                    </div>
-                                </template>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-utils">
-                    <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <div class="nav-links">
                     
-    <button class="nav-util" id="toc-toggle"><i class="fa-solid fa-list"></i></button>
-
+                        <a href="/" class="nav-link">Domů</a>
+                    
+                    <a href="/about" class="nav-link">O stránce</a>
                 </div>
+                
+                    <button class="nav-util" id="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+                
             </div>
         </nav>
-        <button id="go-up-button" onclick="window.scrollTo({top: 0})"><i class="fa-solid fa-arrow-up"></i></button>
+        
+    <button id="toc-toggle"><i class="fa-solid fa-list"></i></button>
+
         <div class="flex-container">
             <aside id="site-map">
-                <div class="aside-title">Poznámky</div>
                 <div class="site-map-content">
+                    <div class="aside-title">Poznámky</div>
                     
                     
                         <section class="site-map-section">
@@ -1580,6 +1549,15 @@
                     
                         <section class="site-map-section">
     
+    <button class="section-button">	&bull; O stránce</button>
+    <div class="section-content">
+        
+        
+    </div>
+</section>
+                    
+                        <section class="site-map-section">
+    
     <button class="section-button">	&bull; Český jazyk</button>
     <div class="section-content">
         
@@ -2404,124 +2382,9 @@
 </section>
                     
                 </div>
+                <div id="site-map-blur"></div>
             </aside>
-            <div id="main-toc">
-                
-    <aside id="toc">
-        <div class="aside-title">Obsah</div>
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#kořen">Kořen</a>
-      <ul>
-        <li><a href="#funkce-kořenů">Funkce kořenů</a></li>
-        <li><a href="#stavba-kořenů">Stavba kořenů</a>
-          <ul>
-            <li><a href="#podélná-stavba-kořene">Podélná stavba kořene</a></li>
-            <li><a href="#příčná-stavba-kořene">Příčná stavba kořene</a></li>
-          </ul>
-        </li>
-        <li><a href="#kořenový-systém">Kořenový systém</a></li>
-        <li><a href="#dělení-kořenů">Dělení kořenů</a>
-          <ul>
-            <li><a href="#podle-vzhledu">Podle vzhledu</a></li>
-            <li><a href="#podle-modifikace">Podle modifikace</a></li>
-            <li><a href="#podle-využití">Podle využití</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#stonek">Stonek</a></li>
-    <li><a href="#list">List</a>
-      <ul>
-        <li><a href="#funkce-listu">Funkce listu</a></li>
-        <li><a href="#stavba-listu">Stavba listu</a>
-          <ul>
-            <li><a href="#základní-stavba">Základní stavba</a></li>
-            <li><a href="#řez-listem">Řez listem</a></li>
-          </ul>
-        </li>
-        <li><a href="#dělení-listů">Dělení listů</a>
-          <ul>
-            <li><a href="#podle-řapíku">Podle řapíku</a></li>
-            <li><a href="#podle-listové-čepele">Podle listové čepele</a></li>
-            <li><a href="#podle-tvaru-čepele">Podle tvaru čepele</a></li>
-            <li><a href="#podle-okraje-čepele">Podle okraje čepele</a></li>
-            <li><a href="#podle-postavení-na-stonku">Podle postavení na stonku</a></li>
-          </ul>
-        </li>
-        <li><a href="#přeměny-listu">Přeměny listu</a></li>
-        <li><a href="#význam-kořenů">Význam kořenů</a></li>
-      </ul>
-    </li>
-    <li><a href="#květ">Květ</a>
-      <ul>
-        <li><a href="#funkce-květu">Funkce květu</a></li>
-        <li><a href="#stavba-květu">Stavba květu</a>
-          <ul>
-            <li><a href="#květní-stopka">Květní stopka</a></li>
-            <li><a href="#květní-lůžka">Květní lůžka</a></li>
-            <li><a href="#květní-obaly">Květní obaly</a>
-              <ul>
-                <li><a href="#tvarově-a-barevně-rozlišené">Tvarově a barevně rozlišené</a></li>
-                <li><a href="#nerozlišené">Nerozlišené</a></li>
-              </ul>
-            </li>
-            <li><a href="#reprodukční-orgány">Reprodukční orgány</a>
-              <ul>
-                <li><a href="#tyčinka">Tyčinka</a>
-                  <ul>
-                    <li><a href="#stavba">Stavba</a></li>
-                  </ul>
-                </li>
-                <li><a href="#pestík">Pestík</a>
-                  <ul>
-                    <li><a href="#stavba-1">Stavba</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#dělení-květů">Dělení květů</a>
-          <ul>
-            <li><a href="#podle-souměrnosti">Podle souměrnosti</a>
-              <ul>
-                <li><a href="#pravidelné">Pravidelné</a></li>
-                <li><a href="#souměrné">Souměrné</a></li>
-                <li><a href="#asymetrické">Asymetrické</a></li>
-              </ul>
-            </li>
-            <li><a href="#podle-pohlavnosti">Podle pohlavnosti</a>
-              <ul>
-                <li><a href="#oboupohlavné">Oboupohlavné</a></li>
-                <li><a href="#jednopohlavné">Jednopohlavné</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#květenství">Květenství</a>
-          <ul>
-            <li><a href="#dělení-květneství">Dělení květneství</a>
-              <ul>
-                <li><a href="#jednoduchá">Jednoduchá</a>
-                  <ul>
-                    <li><a href="#hroznovité">Hroznovité</a></li>
-                    <li><a href="#vrcholičnaté">Vrcholičnaté</a></li>
-                  </ul>
-                </li>
-                <li><a href="#složená">Složená</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#význam-květů">Význam květů</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </aside>
-
-                
+            
     <main>
         <div class="main-title">Rostlinné orgány</div>
         <div class="main-content"><ul>
@@ -3339,32 +3202,153 @@
 </ul>
 </div>
     </main>
-
+    <div class="search">
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search-input" type="text" placeholder="Hledat...">
+    </div>
+    <div id="search-results-container">
+        <div id="search-results"></div>
+        <div id="not-found-message">
+            ¯\_(ツ)_/¯
+        </div>
+        <template id="search-result-template">
+            <div class="search-result">
+                <a class="search-result-title" href=""></a>
             </div>
+        </template>
+    </div>
+</div>
+
+            
+    <aside id="toc">
+        <div class="aside-title">Obsah</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#kořen">Kořen</a>
+      <ul>
+        <li><a href="#funkce-kořenů">Funkce kořenů</a></li>
+        <li><a href="#stavba-kořenů">Stavba kořenů</a>
+          <ul>
+            <li><a href="#podélná-stavba-kořene">Podélná stavba kořene</a></li>
+            <li><a href="#příčná-stavba-kořene">Příčná stavba kořene</a></li>
+          </ul>
+        </li>
+        <li><a href="#kořenový-systém">Kořenový systém</a></li>
+        <li><a href="#dělení-kořenů">Dělení kořenů</a>
+          <ul>
+            <li><a href="#podle-vzhledu">Podle vzhledu</a></li>
+            <li><a href="#podle-modifikace">Podle modifikace</a></li>
+            <li><a href="#podle-využití">Podle využití</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#stonek">Stonek</a></li>
+    <li><a href="#list">List</a>
+      <ul>
+        <li><a href="#funkce-listu">Funkce listu</a></li>
+        <li><a href="#stavba-listu">Stavba listu</a>
+          <ul>
+            <li><a href="#základní-stavba">Základní stavba</a></li>
+            <li><a href="#řez-listem">Řez listem</a></li>
+          </ul>
+        </li>
+        <li><a href="#dělení-listů">Dělení listů</a>
+          <ul>
+            <li><a href="#podle-řapíku">Podle řapíku</a></li>
+            <li><a href="#podle-listové-čepele">Podle listové čepele</a></li>
+            <li><a href="#podle-tvaru-čepele">Podle tvaru čepele</a></li>
+            <li><a href="#podle-okraje-čepele">Podle okraje čepele</a></li>
+            <li><a href="#podle-postavení-na-stonku">Podle postavení na stonku</a></li>
+          </ul>
+        </li>
+        <li><a href="#přeměny-listu">Přeměny listu</a></li>
+        <li><a href="#význam-kořenů">Význam kořenů</a></li>
+      </ul>
+    </li>
+    <li><a href="#květ">Květ</a>
+      <ul>
+        <li><a href="#funkce-květu">Funkce květu</a></li>
+        <li><a href="#stavba-květu">Stavba květu</a>
+          <ul>
+            <li><a href="#květní-stopka">Květní stopka</a></li>
+            <li><a href="#květní-lůžka">Květní lůžka</a></li>
+            <li><a href="#květní-obaly">Květní obaly</a>
+              <ul>
+                <li><a href="#tvarově-a-barevně-rozlišené">Tvarově a barevně rozlišené</a></li>
+                <li><a href="#nerozlišené">Nerozlišené</a></li>
+              </ul>
+            </li>
+            <li><a href="#reprodukční-orgány">Reprodukční orgány</a>
+              <ul>
+                <li><a href="#tyčinka">Tyčinka</a>
+                  <ul>
+                    <li><a href="#stavba">Stavba</a></li>
+                  </ul>
+                </li>
+                <li><a href="#pestík">Pestík</a>
+                  <ul>
+                    <li><a href="#stavba-1">Stavba</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#dělení-květů">Dělení květů</a>
+          <ul>
+            <li><a href="#podle-souměrnosti">Podle souměrnosti</a>
+              <ul>
+                <li><a href="#pravidelné">Pravidelné</a></li>
+                <li><a href="#souměrné">Souměrné</a></li>
+                <li><a href="#asymetrické">Asymetrické</a></li>
+              </ul>
+            </li>
+            <li><a href="#podle-pohlavnosti">Podle pohlavnosti</a>
+              <ul>
+                <li><a href="#oboupohlavné">Oboupohlavné</a></li>
+                <li><a href="#jednopohlavné">Jednopohlavné</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#květenství">Květenství</a>
+          <ul>
+            <li><a href="#dělení-květneství">Dělení květneství</a>
+              <ul>
+                <li><a href="#jednoduchá">Jednoduchá</a>
+                  <ul>
+                    <li><a href="#hroznovité">Hroznovité</a></li>
+                    <li><a href="#vrcholičnaté">Vrcholičnaté</a></li>
+                  </ul>
+                </li>
+                <li><a href="#složená">Složená</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#význam-květů">Význam květů</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </aside>
+
         </div>
         <footer>
             <div class="footer-content">
                 <div class="footer-container">
-                    <strong>Petr Geršl</strong>
-                    <div class="footer-item"><a class="footer-link" href="mailto:pgersl05@gmail.com">pgersl05@gmail.com</a></div>
-                    <div class="footer-item"><a class="footer-link" href="tel:+420731347915">+420 731 347 915</a></div>
-                    <div class="footer-item">Brno, CZE</div>
+                    <strong>Notes | Petr Geršl</strong>
+                    <p>2026</p>
                 </div>
                 <div class="footer-container">
-                    <strong>Prozkoumejte více:</strong>
-                    
-                        <a href="https://pgersl.xyz" class="footer-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://wiki.pgersl.xyz" class="footer-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://music.pgersl.xyz" class="footer-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
+                    <a id="buy-me-a-coffee" href="https://buymeacoffee.com/petrgersl" id="buy-me-a-coffee"><i class="fa-solid fa-mug-hot"></i></a>
+                    <a id="linktree" href="https://linktr.ee/pgersl?utm_source=linktree_profile_share&ltsid=df6a1618-6fb2-4c28-929b-27bc68534dc5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 237.4L253.8 237.4L164.4 152L213.9 101L299.1 188.8L299.1 64L373 64L373 188.8L458.2 101.2L507.6 152L418.2 237.2L543.9 237.2L543.9 307.7L417.5 307.7L507.5 395.3L458.2 445.1L336 322.1L213.8 445.1L164.3 395.5L254.3 307.9L127.9 307.9L127.9 237.4zM298.9 408.8L372.8 408.8L372.8 576L298.9 576L298.9 408.8z"/></svg></a>
                 </div>
-                <div class="footer-container">
-                    <strong>Najděte mě:</strong>
-                    <div class="footer-item"><a class="footer-link" href="linkedin.com/in/petr-geršl-9324491a6" target="_blank">LinkedIn</a></div>
-                    <div class="footer-item"><a class="footer-link" href="https://github.com/pgersl" target="_blank">GitHub</a></div>
-                </div>
+            </div>
+            <div class="subfooter">
+                <span>Designed by <a href="https://pgersl.xyz/">Petr Geršl</a></span>
             </div>
         </footer>
     </body>

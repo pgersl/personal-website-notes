@@ -2,7 +2,7 @@
 {{define "styles"}}<link rel="stylesheet" href="/css/single.css">{{end}}
 {{define "scripts"}}<script src="/js/toc.js" defer></script>{{end}}
 {{define "nav-utils"}}
-    <button class="nav-util" id="toc-toggle"><i class="fa-solid fa-list"></i></button>
+    <button id="toc-toggle"><i class="fa-solid fa-list"></i></button>
 {{end}}
 {{define "toc"}}
     <aside id="toc">
@@ -15,4 +15,5 @@
         <div class="main-title">{{.Title}}</div>
         <div class="main-content">{{.Content}}</div>
     </main>
+    {{partial "search.html" .}}
 {{end}}

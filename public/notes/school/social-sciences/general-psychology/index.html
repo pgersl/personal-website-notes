@@ -32,62 +32,31 @@
         </script>
         <script type="text/javascript" src="/js/site-map.js" defer></script>
         <script type="text/javascript" src="/js/search.js" defer></script>
-        <script type="text/javascript" src="/js/go-up-button.js" defer></script>
         <script src="/js/toc.js" defer></script>
 
     </head>
     <body>
-        <header>Petr Geršl</header>
         <nav>
             <div class="nav-content">
-                <div id="nav-links-search">
-                    <div class="nav-links">
-                        <div class="main-nav-links">
-                            <a href="/" class="nav-link">Domů</a>
-                        </div>
-                        <div class="sites-nav-links">
-                            
-                                <a href="https://pgersl.xyz" class="nav-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://wiki.pgersl.xyz" class="nav-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                                <a href="https://music.pgersl.xyz" class="nav-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div id="nav-search">
-                        <div id="nav-search-bar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input id="search-input" type="text" placeholder="Hledat...">
-                            <div id="search-results-container">
-                                <div id="search-results"></div>
-                                <div id="not-found-message">
-                                    Jejda...<br>
-                                    Nic nenalezeno!<br>
-                                    Zkuste vyhledat něco jiného.
-                                </div>
-                                <template id="search-result-template">
-                                    <div class="search-result">
-                                        <a class="search-result-title" href=""></a>
-                                    </div>
-                                </template>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-utils">
-                    <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <button class="nav-util" id="site-map-toggle"><i class="fa-solid fa-bars"></i></button>
+                <div class="nav-links">
                     
-    <button class="nav-util" id="toc-toggle"><i class="fa-solid fa-list"></i></button>
-
+                        <a href="/" class="nav-link">Domů</a>
+                    
+                    <a href="/about" class="nav-link">O stránce</a>
                 </div>
+                
+                    <button class="nav-util" id="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+                
             </div>
         </nav>
-        <button id="go-up-button" onclick="window.scrollTo({top: 0})"><i class="fa-solid fa-arrow-up"></i></button>
+        
+    <button id="toc-toggle"><i class="fa-solid fa-list"></i></button>
+
         <div class="flex-container">
             <aside id="site-map">
-                <div class="aside-title">Poznámky</div>
                 <div class="site-map-content">
+                    <div class="aside-title">Poznámky</div>
                     
                     
                         <section class="site-map-section">
@@ -1580,6 +1549,15 @@
                     
                         <section class="site-map-section">
     
+    <button class="section-button">	&bull; O stránce</button>
+    <div class="section-content">
+        
+        
+    </div>
+</section>
+                    
+                        <section class="site-map-section">
+    
     <button class="section-button">	&bull; Český jazyk</button>
     <div class="section-content">
         
@@ -2404,200 +2382,9 @@
 </section>
                     
                 </div>
+                <div id="site-map-blur"></div>
             </aside>
-            <div id="main-toc">
-                
-    <aside id="toc">
-        <div class="aside-title">Obsah</div>
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#psychycké-procesy">Psychycké procesy</a>
-      <ul>
-        <li><a href="#poznávací-procesy">Poznávací procesy</a>
-          <ul>
-            <li><a href="#vnímání">Vnímání</a>
-              <ul>
-                <li><a href="#tablua-rasa">Tablua rasa</a></li>
-                <li><a href="#gestaltické-principy">Gestaltické principy</a>
-                  <ul>
-                    <li><a href="#princip-figury-a-pozadí">Princip figury a pozadí</a></li>
-                    <li><a href="#princip-blízkosti">Princip blízkosti</a></li>
-                    <li><a href="#princip-podobnosti">Princip podobnosti</a></li>
-                    <li><a href="#princip-uzavřenosti-a-dobrého-tvaru">Princip uzavřenosti a dobrého tvaru</a></li>
-                    <li><a href="#princip-symetrie">Princip symetrie</a></li>
-                    <li><a href="#princip-konstantnosti">Princip konstantnosti</a></li>
-                  </ul>
-                </li>
-                <li><a href="#vliv-na-vnímání">Vliv na vnímání</a>
-                  <ul>
-                    <li><a href="#vliv-sociální-skupiny">Vliv sociální skupiny</a></li>
-                    <li><a href="#vliv-sociální-zkušenosti">Vliv sociální zkušenosti</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#paměť">Paměť</a>
-              <ul>
-                <li><a href="#fáze-paměti">Fáze paměti</a>
-                  <ul>
-                    <li><a href="#zakódování">Zakódování</a></li>
-                    <li><a href="#uchování">Uchování</a></li>
-                    <li><a href="#vybavení">Vybavení</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#představivost">Představivost</a>
-              <ul>
-                <li><a href="#funkce-představivosti">Funkce představivosti</a></li>
-                <li><a href="#typy-představivosti">Typy představivosti</a></li>
-              </ul>
-            </li>
-            <li><a href="#učení">Učení</a>
-              <ul>
-                <li><a href="#definice-učení">Definice učení</a></li>
-                <li><a href="#základní-metody-učení">Základní metody učení</a>
-                  <ul>
-                    <li><a href="#cvičení">Cvičení</a></li>
-                    <li><a href="#podmiňování">Podmiňování</a></li>
-                    <li><a href="#habituace">Habituace</a></li>
-                    <li><a href="#senzibiliace">Senzibiliace</a></li>
-                    <li><a href="#vtiskávání">Vtiskávání</a></li>
-                    <li><a href="#učení-vhledem">Učení vhledem</a></li>
-                    <li><a href="#učení-nápodobou">Učení nápodobou</a></li>
-                  </ul>
-                </li>
-                <li><a href="#významné-formy-učení">Významné formy učení</a>
-                  <ul>
-                    <li><a href="#senzomotorické-učení">Senzomotorické učení</a></li>
-                    <li><a href="#kognitivní-učení">Kognitivní učení</a></li>
-                    <li><a href="#sociální-učení">Sociální učení</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#myšlení">Myšlení</a>
-              <ul>
-                <li><a href="#proces-manipulace">Proces manipulace</a></li>
-                <li><a href="#myšlenkové-operace">Myšlenkové operace</a></li>
-                <li><a href="#řešení-problémů">Řešení problémů</a></li>
-                <li><a href="#kognitivní-vývoj">Kognitivní vývoj</a></li>
-                <li><a href="#jazyk-a-řeč">Jazyk a řeč</a>
-                  <ul>
-                    <li><a href="#definice">Definice</a></li>
-                    <li><a href="#jazykové-kompetence">Jazykové kompetence</a></li>
-                    <li><a href="#funkce-řeči">Funkce řeči</a></li>
-                    <li><a href="#základní-stránky-řeči">Základní stránky řeči</a></li>
-                  </ul>
-                </li>
-                <li><a href="#inteligence">Inteligence</a>
-                  <ul>
-                    <li><a href="#definice-1">Definice</a></li>
-                    <li><a href="#projevy-inteligence">Projevy inteligence</a></li>
-                    <li><a href="#typy-inteligence">Typy inteligence</a></li>
-                    <li><a href="#vlivy-na-využitelnost-inteligence">Vlivy na využitelnost inteligence</a></li>
-                    <li><a href="#měření-inteligence">Měření inteligence</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#citové-procesy">Citové procesy</a>
-          <ul>
-            <li><a href="#emocionalita">Emocionalita</a>
-              <ul>
-                <li>
-                  <ul>
-                    <li><a href="#projevy-emocí">Projevy emocí</a></li>
-                    <li><a href="#funkce-emocí">Funkce emocí</a></li>
-                    <li><a href="#emoční-inteligence">Emoční inteligence</a></li>
-                    <li><a href="#psychohygiena">Psychohygiena</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#klasifikace-emocí">Klasifikace emocí</a>
-              <ul>
-                <li><a href="#podle-kvality">Podle kvality</a></li>
-                <li><a href="#podle-intenzity-a-délky">Podle intenzity a délky</a></li>
-                <li><a href="#podle-zaměřní">Podle zaměřní</a></li>
-                <li><a href="#podle-aktivizace">Podle aktivizace</a></li>
-                <li><a href="#podle-výšky">Podle výšky</a></li>
-              </ul>
-            </li>
-            <li><a href="#teorie-emocí">Teorie emocí</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#psychycké-stavy">Psychycké stavy</a></li>
-    <li><a href="#psychické-vlastnosti">Psychické vlastnosti</a></li>
-    <li><a href="#osobnost">Osobnost</a>
-      <ul>
-        <li><a href="#přístupy-k-osobnosti">Přístupy k osobnosti</a>
-          <ul>
-            <li><a href="#topologický-přístup">Topologický přístup</a>
-              <ul>
-                <li><a href="#podle-tělesné-stavby-_kretschmer_">Podle tělesné stavby (<em>Kretschmer</em>)</a></li>
-                <li><a href="#extroverze-a-introverze-_jung_">Extroverze a introverze (<em>Jung</em>)</a></li>
-                <li><a href="#temperamenty-_hyppokrates_">Temperamenty (<em>Hyppokrates</em>)</a></li>
-              </ul>
-            </li>
-            <li><a href="#dynamický-přístup">Dynamický přístup</a>
-              <ul>
-                <li><a href="#freud">Freud</a></li>
-                <li><a href="#jung">Jung</a></li>
-                <li><a href="#berne">Berne</a></li>
-              </ul>
-            </li>
-            <li><a href="#faktoriální-přístup">Faktoriální přístup</a></li>
-          </ul>
-        </li>
-        <li><a href="#integrace-osobnosti">Integrace osobnosti</a>
-          <ul>
-            <li><a href="#interakční-systémy">Interakční systémy</a></li>
-            <li><a href="#roviny-procesu-integrace">Roviny procesu integrace</a></li>
-          </ul>
-        </li>
-        <li><a href="#vlastnosti-osobnosti">Vlastnosti osobnosti</a>
-          <ul>
-            <li><a href="#dynamické-vlastnosti">Dynamické vlastnosti</a></li>
-            <li><a href="#vztahově-postojové-vlastnosti">Vztahově-postojové vlastnosti</a></li>
-            <li><a href="#výkonové-vlastnosti">Výkonové vlastnosti</a>
-              <ul>
-                <li><a href="#schopnost">Schopnost</a></li>
-                <li><a href="#dovednost">Dovednost</a></li>
-                <li><a href="#vědomost">Vědomost</a></li>
-                <li><a href="#návyk">Návyk</a></li>
-              </ul>
-            </li>
-            <li><a href="#aktivačně-motivační-vlastnosti">Aktivačně-motivační vlastnosti</a>
-              <ul>
-                <li><a href="#motiv">Motiv</a></li>
-                <li><a href="#potřeba">Potřeba</a>
-                  <ul>
-                    <li><a href="#maslowova-hierarchie-potřeb">Maslowova hierarchie potřeb</a></li>
-                  </ul>
-                </li>
-                <li><a href="#pohnutka">Pohnutka</a></li>
-              </ul>
-            </li>
-            <li><a href="#seberegulační-vlastnosti">Seberegulační vlastnosti</a>
-              <ul>
-                <li><a href="#svědomí">Svědomí</a></li>
-                <li><a href="#vůle">Vůle</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </aside>
-
-                
+            
     <main>
         <div class="main-title">Obecná psychologie</div>
         <div class="main-content"><h1 id="psychycké-procesy">Psychycké procesy</h1>
@@ -3538,32 +3325,229 @@
 </ul>
 </div>
     </main>
-
+    <div class="search">
+    <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search-input" type="text" placeholder="Hledat...">
+    </div>
+    <div id="search-results-container">
+        <div id="search-results"></div>
+        <div id="not-found-message">
+            ¯\_(ツ)_/¯
+        </div>
+        <template id="search-result-template">
+            <div class="search-result">
+                <a class="search-result-title" href=""></a>
             </div>
+        </template>
+    </div>
+</div>
+
+            
+    <aside id="toc">
+        <div class="aside-title">Obsah</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#psychycké-procesy">Psychycké procesy</a>
+      <ul>
+        <li><a href="#poznávací-procesy">Poznávací procesy</a>
+          <ul>
+            <li><a href="#vnímání">Vnímání</a>
+              <ul>
+                <li><a href="#tablua-rasa">Tablua rasa</a></li>
+                <li><a href="#gestaltické-principy">Gestaltické principy</a>
+                  <ul>
+                    <li><a href="#princip-figury-a-pozadí">Princip figury a pozadí</a></li>
+                    <li><a href="#princip-blízkosti">Princip blízkosti</a></li>
+                    <li><a href="#princip-podobnosti">Princip podobnosti</a></li>
+                    <li><a href="#princip-uzavřenosti-a-dobrého-tvaru">Princip uzavřenosti a dobrého tvaru</a></li>
+                    <li><a href="#princip-symetrie">Princip symetrie</a></li>
+                    <li><a href="#princip-konstantnosti">Princip konstantnosti</a></li>
+                  </ul>
+                </li>
+                <li><a href="#vliv-na-vnímání">Vliv na vnímání</a>
+                  <ul>
+                    <li><a href="#vliv-sociální-skupiny">Vliv sociální skupiny</a></li>
+                    <li><a href="#vliv-sociální-zkušenosti">Vliv sociální zkušenosti</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#paměť">Paměť</a>
+              <ul>
+                <li><a href="#fáze-paměti">Fáze paměti</a>
+                  <ul>
+                    <li><a href="#zakódování">Zakódování</a></li>
+                    <li><a href="#uchování">Uchování</a></li>
+                    <li><a href="#vybavení">Vybavení</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#představivost">Představivost</a>
+              <ul>
+                <li><a href="#funkce-představivosti">Funkce představivosti</a></li>
+                <li><a href="#typy-představivosti">Typy představivosti</a></li>
+              </ul>
+            </li>
+            <li><a href="#učení">Učení</a>
+              <ul>
+                <li><a href="#definice-učení">Definice učení</a></li>
+                <li><a href="#základní-metody-učení">Základní metody učení</a>
+                  <ul>
+                    <li><a href="#cvičení">Cvičení</a></li>
+                    <li><a href="#podmiňování">Podmiňování</a></li>
+                    <li><a href="#habituace">Habituace</a></li>
+                    <li><a href="#senzibiliace">Senzibiliace</a></li>
+                    <li><a href="#vtiskávání">Vtiskávání</a></li>
+                    <li><a href="#učení-vhledem">Učení vhledem</a></li>
+                    <li><a href="#učení-nápodobou">Učení nápodobou</a></li>
+                  </ul>
+                </li>
+                <li><a href="#významné-formy-učení">Významné formy učení</a>
+                  <ul>
+                    <li><a href="#senzomotorické-učení">Senzomotorické učení</a></li>
+                    <li><a href="#kognitivní-učení">Kognitivní učení</a></li>
+                    <li><a href="#sociální-učení">Sociální učení</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#myšlení">Myšlení</a>
+              <ul>
+                <li><a href="#proces-manipulace">Proces manipulace</a></li>
+                <li><a href="#myšlenkové-operace">Myšlenkové operace</a></li>
+                <li><a href="#řešení-problémů">Řešení problémů</a></li>
+                <li><a href="#kognitivní-vývoj">Kognitivní vývoj</a></li>
+                <li><a href="#jazyk-a-řeč">Jazyk a řeč</a>
+                  <ul>
+                    <li><a href="#definice">Definice</a></li>
+                    <li><a href="#jazykové-kompetence">Jazykové kompetence</a></li>
+                    <li><a href="#funkce-řeči">Funkce řeči</a></li>
+                    <li><a href="#základní-stránky-řeči">Základní stránky řeči</a></li>
+                  </ul>
+                </li>
+                <li><a href="#inteligence">Inteligence</a>
+                  <ul>
+                    <li><a href="#definice-1">Definice</a></li>
+                    <li><a href="#projevy-inteligence">Projevy inteligence</a></li>
+                    <li><a href="#typy-inteligence">Typy inteligence</a></li>
+                    <li><a href="#vlivy-na-využitelnost-inteligence">Vlivy na využitelnost inteligence</a></li>
+                    <li><a href="#měření-inteligence">Měření inteligence</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#citové-procesy">Citové procesy</a>
+          <ul>
+            <li><a href="#emocionalita">Emocionalita</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#projevy-emocí">Projevy emocí</a></li>
+                    <li><a href="#funkce-emocí">Funkce emocí</a></li>
+                    <li><a href="#emoční-inteligence">Emoční inteligence</a></li>
+                    <li><a href="#psychohygiena">Psychohygiena</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#klasifikace-emocí">Klasifikace emocí</a>
+              <ul>
+                <li><a href="#podle-kvality">Podle kvality</a></li>
+                <li><a href="#podle-intenzity-a-délky">Podle intenzity a délky</a></li>
+                <li><a href="#podle-zaměřní">Podle zaměřní</a></li>
+                <li><a href="#podle-aktivizace">Podle aktivizace</a></li>
+                <li><a href="#podle-výšky">Podle výšky</a></li>
+              </ul>
+            </li>
+            <li><a href="#teorie-emocí">Teorie emocí</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#psychycké-stavy">Psychycké stavy</a></li>
+    <li><a href="#psychické-vlastnosti">Psychické vlastnosti</a></li>
+    <li><a href="#osobnost">Osobnost</a>
+      <ul>
+        <li><a href="#přístupy-k-osobnosti">Přístupy k osobnosti</a>
+          <ul>
+            <li><a href="#topologický-přístup">Topologický přístup</a>
+              <ul>
+                <li><a href="#podle-tělesné-stavby-_kretschmer_">Podle tělesné stavby (<em>Kretschmer</em>)</a></li>
+                <li><a href="#extroverze-a-introverze-_jung_">Extroverze a introverze (<em>Jung</em>)</a></li>
+                <li><a href="#temperamenty-_hyppokrates_">Temperamenty (<em>Hyppokrates</em>)</a></li>
+              </ul>
+            </li>
+            <li><a href="#dynamický-přístup">Dynamický přístup</a>
+              <ul>
+                <li><a href="#freud">Freud</a></li>
+                <li><a href="#jung">Jung</a></li>
+                <li><a href="#berne">Berne</a></li>
+              </ul>
+            </li>
+            <li><a href="#faktoriální-přístup">Faktoriální přístup</a></li>
+          </ul>
+        </li>
+        <li><a href="#integrace-osobnosti">Integrace osobnosti</a>
+          <ul>
+            <li><a href="#interakční-systémy">Interakční systémy</a></li>
+            <li><a href="#roviny-procesu-integrace">Roviny procesu integrace</a></li>
+          </ul>
+        </li>
+        <li><a href="#vlastnosti-osobnosti">Vlastnosti osobnosti</a>
+          <ul>
+            <li><a href="#dynamické-vlastnosti">Dynamické vlastnosti</a></li>
+            <li><a href="#vztahově-postojové-vlastnosti">Vztahově-postojové vlastnosti</a></li>
+            <li><a href="#výkonové-vlastnosti">Výkonové vlastnosti</a>
+              <ul>
+                <li><a href="#schopnost">Schopnost</a></li>
+                <li><a href="#dovednost">Dovednost</a></li>
+                <li><a href="#vědomost">Vědomost</a></li>
+                <li><a href="#návyk">Návyk</a></li>
+              </ul>
+            </li>
+            <li><a href="#aktivačně-motivační-vlastnosti">Aktivačně-motivační vlastnosti</a>
+              <ul>
+                <li><a href="#motiv">Motiv</a></li>
+                <li><a href="#potřeba">Potřeba</a>
+                  <ul>
+                    <li><a href="#maslowova-hierarchie-potřeb">Maslowova hierarchie potřeb</a></li>
+                  </ul>
+                </li>
+                <li><a href="#pohnutka">Pohnutka</a></li>
+              </ul>
+            </li>
+            <li><a href="#seberegulační-vlastnosti">Seberegulační vlastnosti</a>
+              <ul>
+                <li><a href="#svědomí">Svědomí</a></li>
+                <li><a href="#vůle">Vůle</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </aside>
+
         </div>
         <footer>
             <div class="footer-content">
                 <div class="footer-container">
-                    <strong>Petr Geršl</strong>
-                    <div class="footer-item"><a class="footer-link" href="mailto:pgersl05@gmail.com">pgersl05@gmail.com</a></div>
-                    <div class="footer-item"><a class="footer-link" href="tel:+420731347915">+420 731 347 915</a></div>
-                    <div class="footer-item">Brno, CZE</div>
+                    <strong>Notes | Petr Geršl</strong>
+                    <p>2026</p>
                 </div>
                 <div class="footer-container">
-                    <strong>Prozkoumejte více:</strong>
-                    
-                        <a href="https://pgersl.xyz" class="footer-link">Hlavní <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://wiki.pgersl.xyz" class="footer-link">Wiki <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
-                        <a href="https://music.pgersl.xyz" class="footer-link">Hudba <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    
+                    <a id="buy-me-a-coffee" href="https://buymeacoffee.com/petrgersl" id="buy-me-a-coffee"><i class="fa-solid fa-mug-hot"></i></a>
+                    <a id="linktree" href="https://linktr.ee/pgersl?utm_source=linktree_profile_share&ltsid=df6a1618-6fb2-4c28-929b-27bc68534dc5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 237.4L253.8 237.4L164.4 152L213.9 101L299.1 188.8L299.1 64L373 64L373 188.8L458.2 101.2L507.6 152L418.2 237.2L543.9 237.2L543.9 307.7L417.5 307.7L507.5 395.3L458.2 445.1L336 322.1L213.8 445.1L164.3 395.5L254.3 307.9L127.9 307.9L127.9 237.4zM298.9 408.8L372.8 408.8L372.8 576L298.9 576L298.9 408.8z"/></svg></a>
                 </div>
-                <div class="footer-container">
-                    <strong>Najděte mě:</strong>
-                    <div class="footer-item"><a class="footer-link" href="linkedin.com/in/petr-geršl-9324491a6" target="_blank">LinkedIn</a></div>
-                    <div class="footer-item"><a class="footer-link" href="https://github.com/pgersl" target="_blank">GitHub</a></div>
-                </div>
+            </div>
+            <div class="subfooter">
+                <span>Designed by <a href="https://pgersl.xyz/">Petr Geršl</a></span>
             </div>
         </footer>
     </body>
