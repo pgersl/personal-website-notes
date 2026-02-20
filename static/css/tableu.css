@@ -1,3 +1,6 @@
+main {
+    width: var(--width);
+}
 .periodic-table-container {
     width: 100%;
     display: block;
@@ -106,7 +109,7 @@
     border-radius: .4em;
     gap: var(--element-gap);
     text-decoration: none;
-    background-color: var(--light2);
+    background-color: var(--secondary);
     width: var(--element-width);
     height: var(--element-height);
     transition: var(--transition);
@@ -130,8 +133,8 @@
     font-size: var(--tiny-size);
 }
 a.element:hover, .element-multiple:hover .element {
-    background-color: var(--accent3);
-    color: var(--light1);
+    background-color: var(--primary);
+    color: var(--background);
 }
 .element-multiple {
     display: flex;
@@ -144,7 +147,7 @@ a.element:hover, .element-multiple:hover .element {
 }
 
 .unknown {
-    color: var(--light4);
+    color: grey;
 }
 
 #group-number-iiib, .d-block-gap {
@@ -153,20 +156,22 @@ a.element:hover, .element-multiple:hover .element {
 
 .selector, .block-selector {
     margin: .1em;
-    padding: .07em 0.1em;
+    padding: .1rem 0.2rem;
     outline: none;
-    border: 1px solid var(--light4);
+    border: none;
     font: var(--font);
     border-radius: .3em;
-    background-color: var(--light2);
-    color: var(--dark1);
+    background-color: var(--secondary);
+    color: var(--text);
 }
 .selector:hover, .block-selector:hover {
     cursor: pointer;
-    background-color: var(--light3);
+    background-color: var(--primary);
+    color: var(--background);
 }
 .active {
-    background-color: var(--accent5);
+    background-color: var(--accent);
+    color: var(--background);
 }
 
 @media (max-width:480px) {

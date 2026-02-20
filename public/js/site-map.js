@@ -1,6 +1,6 @@
 const siteMapUtil = document.getElementById('site-map-toggle')
 const siteMapContainer = document.getElementById('site-map');
-const siteMapBlur = document.getElementById('site-map-blur');
+const siteMapContent = siteMapContainer.querySelector('.site-map-content');
 
 siteMapUtil.addEventListener('click', () => {
     siteMapContainer.style.display = 'flex';
@@ -8,11 +8,13 @@ siteMapUtil.addEventListener('click', () => {
         siteMapContainer.style.opacity = '1';
     }, 200);
 })
-siteMapBlur.addEventListener('click', () => {
-    siteMapContainer.style.opacity = '0';
-    setTimeout(() => {
-        siteMapContainer.style.display = 'none';
-    }, 200);
+siteMapContainer.addEventListener('click', (e) => {
+    if (e.target === siteMapContainer || e.target === siteMapContent) {
+        siteMapContainer.style.opacity = '0';
+        setTimeout(() => {
+            siteMapContainer.style.display = 'none';
+        }, 200);
+    }
 })
 
 
