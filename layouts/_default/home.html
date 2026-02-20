@@ -1,9 +1,26 @@
 {{define "title"}}<title>Petr Geršl - Notes</title>{{end}}
 {{define "styles"}}<link rel="stylesheet" href="/css/home.css">{{end}}
+{{define "scripts"}}<script src="/js/home-buttons.js" defer></script>{{end}}
 {{define "main"}}
     <main>
         <img src="/media/img/main/me.png">
         <h1>Vítejte!</h1>
+        <div class="home-buttons">
+            <button id="disclaimer-button"><i class="fa-solid fa-triangle-exclamation"></i></button>
+            <button id="info-button"><i class="fa-solid fa-circle-info"></i></button>
+        </div>
+        <div id="disclaimer">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Tyto poznámky jsou určeny pouze pro osobní potřebu.
+            <br><br>Obsahují mnou zachycené informace, které mohou být neúplné, nepřesné nebo zastaralé.
+            <br><br>Neberte je jako definitivní zdroj informací a vždy si ověřujte fakta z důvěryhodných zdrojů.</p>
+            <button id="disclaimer-ok">OK</button>
+        </div>
+        <div id="info">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Tyto poznámky jsou výsledkem mého osobního studia a zájmu o různé témata. Vznikali primárně během mého studia na víceletém gymnáziu a jsou určeny primárně pro osobní potřebu. Poznámky budou postupně přibývat.</p>
+            <button id="info-ok">OK</button>
+        </div>
         {{partial "search.html" .}}
     </main>
 {{end}}

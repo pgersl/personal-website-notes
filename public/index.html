@@ -33,7 +33,7 @@
         </script>
         <script type="text/javascript" src="/js/site-map.js" defer></script>
         <script type="text/javascript" src="/js/search.js" defer></script>
-        
+        <script src="/js/home-buttons.js" defer></script>
 
     </head>
     <body>
@@ -2373,6 +2373,22 @@
     <main>
         <img src="/media/img/main/me.png">
         <h1>Vítejte!</h1>
+        <div class="home-buttons">
+            <button id="disclaimer-button"><i class="fa-solid fa-triangle-exclamation"></i></button>
+            <button id="info-button"><i class="fa-solid fa-circle-info"></i></button>
+        </div>
+        <div id="disclaimer">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>Tyto poznámky jsou určeny pouze pro osobní potřebu.
+            <br><br>Obsahují mnou zachycené informace, které mohou být neúplné, nepřesné nebo zastaralé.
+            <br><br>Neberte je jako definitivní zdroj informací a vždy si ověřujte fakta z důvěryhodných zdrojů.</p>
+            <button id="disclaimer-ok">OK</button>
+        </div>
+        <div id="info">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Tyto poznámky jsou výsledkem mého osobního studia a zájmu o různé témata. Vznikali primárně během mého studia na víceletém gymnáziu a jsou určeny primárně pro osobní potřebu. Poznámky budou postupně přibývat.</p>
+            <button id="info-ok">OK</button>
+        </div>
         <div class="search">
     <div class="search-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -2399,6 +2415,9 @@
                 <div class="footer-container">
                     <strong>Notes | Petr Geršl</strong>
                     <p>2026</p>
+                </div>
+                <div class="footer-container">
+                    <a href="https://forms.gle/p6X8FkpD6JoSWbqH9">Nahlásit chybu</a>
                 </div>
                 <div class="footer-container">
                     <a id="buy-me-a-coffee" href="https://buymeacoffee.com/petrgersl" id="buy-me-a-coffee"><i class="fa-solid fa-mug-hot"></i></a>
