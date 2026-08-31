@@ -4,7 +4,7 @@
     --transition: all 100ms;
     --spacer: 2em 0;
     --width: min(95%, 1100px);
-    --font: 'Lexend Deca', sans-serif;
+    --font: 'Inter', sans-serif;
     --font-size: 14px;
     --h1-size: 28px;
     --h2-size: 24px;
@@ -16,7 +16,7 @@
     /*colors*/
     --text: #000000;
     --background: #ffffff;
-    --primary: #9027ce;
-    --secondary: #f4f1f9;
-    --accent: #8f3bff;
+    --primary: #ff8c00;
+    --secondary: #fff5e9;
+    --accent: #ffb459;
 }
